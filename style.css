@@ -1,0 +1,83 @@
+/* Animations/Keyframes!!! */
+@keyframes jumpin_fade_title_div {
+    0% {width: 0}
+    /* 50% {width: 250px} */
+    100% {width: 320px}
+}
+
+@keyframes jumpin_fade_title_text {
+    0% { transform: scaleY(0.000000001);}
+    100% {transform: scaleY(1);}
+}
+
+body {
+    background-color: #21262b;
+}
+
+.title-div {
+    animation-name: jumpin_fade_title_div;
+    animation-duration: 1s;
+    width: 320px;
+    height: 100px;
+    background-color: black;
+    border: 20px solid black;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.title-text {
+    font-family: sans-serif;
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+    transform: scaleY(0.00000000001);
+    animation-name: jumpin_fade_title_text;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.title-text2 {
+    font-family: sans-serif;
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    transform: scaleY(0.00000000001);
+    animation-name: jumpin_fade_title_text;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+.info-div { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hosting-info {
+    font-size: small;
+    color:blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.dev-info {
+    font-size: small;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
